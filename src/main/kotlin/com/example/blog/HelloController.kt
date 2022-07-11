@@ -19,9 +19,8 @@ class HelloController {
 
     @GetMapping("/test")
     fun index(model:Model):String{
-        println("idddd") //에러는 나도 실행은 됨
-        var response:String = "뻐큉"
-        model.addAttribute("title", "ㅗㅗㅗㅗ")
+        var response:String = "TEST"
+        model.addAttribute("title", "TITLE")
         return "footer"
     }
 
@@ -40,7 +39,7 @@ class HelloController {
             val user = repository.save(junUser(userId, password))
 
             println(user.toString())
-            model.addAttribute("title", "ㅗㅗㅗㅗ")
+            model.addAttribute("title", "TITLE")
         } catch (e:Exception) {
             e.printStackTrace()
         }
@@ -50,7 +49,6 @@ class HelloController {
     @GetMapping("{site}")
     fun post(model:Model, @PathVariable site : String):String{
         var di:String = "/"
-        println("하하"+site)
         if(site == "login"){
             di = "/login"
         }
@@ -64,9 +62,6 @@ class HelloController {
             val passw = password
             val db_user = repository.findByUserId("123123")
             val db_user2= repository2.findByLogin("tttt")
-           // println(db_user2.firstname)
-           // println(db_user.userId)
-            println("크ㅡㅋ")
             if(db_user != null){
                 //val db_pass = db_user.password
                 if(passw.equals("111")){
