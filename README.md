@@ -1,7 +1,7 @@
-# 기술 스택
+# 📝 기술 스택
 kotlin + Springboot + gradle + H2 + intellij + jdk8
 
-# 코틀린 기본 문법
+# ✍️ 코틀린 기본 문법
 ```
 fun main(src:Array){  //변수 이름 + 타입
 	println("hello world") //세미콜론 필요없음
@@ -9,5 +9,5 @@ fun main(src:Array){  //변수 이름 + 타입
 }
 ```
 
-# 참고
+# ❤️ 참고
 www.youtube.com/watch?v=trK253PPUP8 
