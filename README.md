@@ -7,6 +7,8 @@ fun main(src:Array){  //변수 이름 + 타입
 	println("hello world") //세미콜론 필요없음
 	var abc:String? = null //?를 붙이면 널도 허용한다는 뜻. ?없애면 null불가
 }
+//val 불변
+//var 가변 
 ```
 
 # ❤️ 참고
